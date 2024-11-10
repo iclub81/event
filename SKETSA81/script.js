@@ -11,3 +11,4 @@ function moveSlide(direction) {
 slides[currentSlide].classList.add("active");
 
 // test commit 
+// test branch
