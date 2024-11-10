@@ -16,7 +16,7 @@ h4,
 h5,
 h6,
 p,
-span {
+span, strong {
     font-family: "Poppins", "sans-serif";
 }
 
@@ -310,4 +310,19 @@ header nav a:hover::after {
     max-width: 800px;
     margin: 0 auto;
     color: #d8d4cf
+}
+
+
+
+/* footer */
+footer {
+    margin-top: 30px;
+    background-color: #000000;
+    padding: 30px;
+    color: white;
+}
+
+.footer_sosmed {
+    display: flex;
+    justify-content: flex-end;
 }
