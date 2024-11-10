@@ -9,3 +9,5 @@ function moveSlide(direction) {
 
 // Inisialisasi tampilan slide pertama
 slides[currentSlide].classList.add("active");
+
+// test commit 
