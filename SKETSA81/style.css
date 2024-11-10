@@ -263,6 +263,7 @@ header nav a:hover::after {
 .aboutUs_top {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 40px;
 }
 
@@ -288,15 +289,41 @@ header nav a:hover::after {
     align-items: center;
 }
 
+/* image slide */
+
 .image-slider {
-    width: 100%;
-    max-width: 500px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider-image {
     width: 100%;
-    border-radius: 10px;
+    max-width: 500px;
+    display: none;
+    /* Hanya tampilkan gambar yang aktif */
+}
+
+.slider-image.active {
+    display: block;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.slider-btn.left {
+    left: 10px;
+}
+
+.slider-btn.right {
+    right: 10px;
 }
 
 /* Kelompok Kecil Bawah */
