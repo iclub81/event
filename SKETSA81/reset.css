@@ -1,0 +1,51 @@
+/* Css Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.list_style_none{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #d8d4cf;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: auto;
+}
+
+.d_flex {
+    display: flex;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* .clearfix {
+    *zoom: 1;
+} */
+
+.color_white {
+    color: white;
+}
