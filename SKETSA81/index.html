@@ -17,281 +17,65 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="fix/grid.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fix/reset.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9a2efe3319.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body class="">
-    <!-- header nav -->
-    <div class="header--wrapper">
-        <header class="container show height100" id="header">
-            <div class="row menu_navigasi">
-                <div class="logoheader col-md-6">
-                    <img src="assets/img/magnoRound_rmv_bg.png" alt="">
-                    <h1><a href="/#home">SKETSA 81</a></h1>
-                </div>
-
-                <nav class="col-md-6 nav_center">
-                    <ul class="list_style_none menu_mobile">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#aboutUs">About</a></li>
-                        <li><a href="#event">Event</a></li>
-                    </ul>
-
-                    <div class="burger_menu">
-                        <div class="burger--wrapper">
-                            <div class="burger_items"></div>
-                            <div class="burger_items"></div>
-                            <div class="burger_items"></div>
-                        </div>
-                    </div>
-                </nav>
+<body class="no_scroll">
+    <header>
+        <h1>SKETSA <span>81</span></h1>
+        <div class="burger_menu">
+            <div class="burger--wrapper">
+                <div class="burger_items"></div>
+                <div class="burger_items"></div>
+                <div class="burger_items"></div>
             </div>
-        </header>
-    </div>
-
-    <main id="beranda">
-        <!-- Main Section (Ada BG terus ada h2) -->
-        <section class="main_section container">
-            <div class="main_section--wrapper row">
-                <div class="main_section_title">
-                    <h2>SKETSA 81</h2> <!-- 64px -->
-                    <p>An annual events of Arts, Sports, and Education</p>
-                    <a href="#aboutUs">
-                        <i class="fa-solid fa-circle-chevron-down mg_top_30"></i>
-                    </a>
-                </div>
+        </div>
+        <!-- ini kalau ditambah class nav-links, mobile bener, desktop error -->
+        <nav class="nav-disabled">
+            <a href="#home" class="active">Home</a>
+            <a href="#aboutUs">About</a>
+            <a href="#">Event</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="alert hide">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg">Harap klik ikon gembok di gambar tuan putri</span>
+            <div class="close-btn">
+                <span class="fas fa-times"></span>
             </div>
-        </section>
-
-        <!-- aboutUs Section -->
-        <div class="aboutUs_section--wrapper">
-            <section class="aboutUs_section container" id="aboutUs">
-
-                <!-- Kelompok besar -->
-                <div class="aboutUs_content">
-
-                    <!-- kelompok kecil atas -->
-                    <div class="aboutUs_top">
-                        <div class="aboutUs_left">
-                            <h2>TENTANG SKETSA 81</h2>
-                            <p>Visi, Misi, Perubahan</p>
-                        </div>
-
-                        <div class="aboutUs_right">
-                            <div class="image-slider">
-                                <i class="fa-solid fa-circle-chevron-left slider-btn left" onclick="moveSlide(-1)"></i>
-
-                                <!-- Slider Images -->
-                                <img src="assets/img/SKETSA81_taunLalu/badminton.png" alt="1"
-                                    class="slider-image active">
-                                <img src="assets/img/SKETSA81_taunLalu/band.png" alt="2" class="slider-image">
-                                <img src="assets/img/SKETSA81_taunLalu/basket.png" alt="3" class="slider-image">
-                                <img src="assets/img/SKETSA81_taunLalu/basket.png" alt="4" class="slider-image">
-                                <img src="assets/img/SKETSA81_taunLalu/conser jkt.png" alt="5" class="slider-image">
-                                <img src="assets/img/SKETSA81_taunLalu/conser.png" alt="6" class="slider-image">
-
-                                <i class="fa-solid fa-circle-chevron-right slider-btn right" onclick="moveSlide(1)"></i>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kelompok Kecil Bawah -->
-                    <div class="aboutUs_bottom">
-                        <p>Sketsa 81 adalah event tahunan SMA Negeri 1 Cirebon. Acara ini terdiri dari pertandingan
-                            olahraga antar sekolah (MARKUM CUP), audisi band dan dance antar komunitas (ARTHOR81) dan
-                            pada hari puncaknya akan mengadakan pentas seni yang melibatkan finalis dari ARTHOR81,
-                            ekstrakurikuler seni smansa dan mengundang artis dari luar.</p>
-                        <p>Untuk tahun ini nama daripada Sketsa 81 adalah Magnolias</p>
-                    </div>
-                </div>
-            </section>
         </div>
 
-        <!-- Juknis -->
-        <div class="aboutUs_section--wrapper">
-            <section class="aboutUs_section container" id="aboutUs">
+    </header>
 
-                <!-- Kelompok besar -->
-                <div class="aboutUs_content">
+    <section class="home">
+        <!-- paling belakang (0) 4624 x 1740 -->
+        <img src="assets/img/parralax/00.png" class="title mount2 maskot">
+        <!-- gunung gede (1) 4624 x 1887 -->
+        <!-- <img src="assets/img/parralax/1.png" class="title mount1"> -->
+        <!-- bush gede (2) 4624 x 1388 asep -->
+        <!-- <img src="assets/img/parralax/bush2.png" class="bush2"> -->
 
-                    <!-- kelompok kecil atas -->
-                    <div class="aboutUs_top">
-                        <div class="aboutUs_left">
-                            <h2>TENTANG SKETSA 81</h2>
-                            <p>TEMA nya apa?</p>
-                        </div>
-                        <div class="aboutUs_right">
-                            <div class="image-slider">
-                                <img src="assets/img/magnoRound_rmv_bg.png" alt="Sketsa 81" class="slider-image">
-                            </div>
-                        </div>
-                    </div>
+        <!-- <h1 class="title">SKETSA 81</h1> -->
 
-                    <!-- Kelompok Kecil Bawah -->
-                    <div class="aboutUs_bottom">
-                        <p>Sketsa 81 adalah event tahunan SMA Negeri 1 Cirebon. Acara ini terdiri dari pertandingan
-                            olahraga antar sekolah (MARKUM CUP), audisi band dan dance antar komunitas (ARTHOR81) dan
-                            pada hari puncaknya akan mengadakan pentas seni yang melibatkan finalis dari ARTHOR81,
-                            ekstrakurikuler seni smansa dan mengundang artis dari luar.</p>
-                        <p>Untuk tahun ini nama daripada Sketsa 81 adalah Magnolias</p>
-                    </div>
-                </div>
-            </section>
+        <!-- paling bawah 4624 x 872 -->
+        <img src="assets/img/parralax/bawah.png" class="bush1">
+        <!-- kanan 4624 x 2600 -->
+        <img src="assets/img/parralax/kanan.png" class="leaf2">
+        <!-- kiri 4624 x 2600 -->
+        <img src="assets/img/parralax/kiri.png" class="leaf1">
+        <!-- rencana gembok disini -->
+        <div id="lock">
+            <i class="fa-solid fa-lock"></i>
         </div>
+        <p id="unlock-text">Unleash Your Potential</p>
+    </section>
 
-        <!-- Perincian Tema dan Grab Your Ticket-->
-        <div class="aboutUs_section--wrapper">
-            <section class="aboutUs_section container" id="aboutUs">
-
-                <!-- Kelompok besar -->
-                <div class="aboutUs_content">
-
-                    <!-- kelompok kecil atas -->
-                    <div class="aboutUs_top">
-                        <div class="aboutUs_left">
-                            <h2>TENTANG SKETSA 81</h2>
-                            <p>TEMA nya apa?</p>
-                        </div>
-                        <div class="aboutUs_right">
-                            <div class="image-slider">
-                                <img src="assets/img/magnoRound_rmv_bg.png" alt="Sketsa 81" class="slider-image">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kelompok Kecil Bawah -->
-                    <div class="aboutUs_bottom">
-                        <p>Sketsa 81 adalah event tahunan SMA Negeri 1 Cirebon. Acara ini terdiri dari pertandingan
-                            olahraga antar sekolah (MARKUM CUP), audisi band dan dance antar komunitas (ARTHOR81) dan
-                            pada hari puncaknya akan mengadakan pentas seni yang melibatkan finalis dari ARTHOR81,
-                            ekstrakurikuler seni smansa dan mengundang artis dari luar.</p>
-                        <p>Untuk tahun ini nama daripada Sketsa 81 adalah Magnolias</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Tema lagi perincian kayaknya -->
-        <div class="aboutUs_section--wrapper">
-            <section class="aboutUs_section container" id="aboutUs">
-
-                <!-- Kelompok besar -->
-                <div class="aboutUs_content">
-
-                    <!-- kelompok kecil atas -->
-                    <div class="aboutUs_top">
-                        <div class="aboutUs_left">
-                            <h2>TENTANG SKETSA 81</h2>
-                            <p>TEMA nya apa?</p>
-                        </div>
-                        <div class="aboutUs_right">
-                            <div class="image-slider">
-                                <img src="assets/img/magnoRound_rmv_bg.png" alt="Sketsa 81" class="slider-image">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kelompok Kecil Bawah -->
-                    <div class="aboutUs_bottom">
-                        <p>Sketsa 81 adalah event tahunan SMA Negeri 1 Cirebon. Acara ini terdiri dari pertandingan
-                            olahraga antar sekolah (MARKUM CUP), audisi band dan dance antar komunitas (ARTHOR81) dan
-                            pada hari puncaknya akan mengadakan pentas seni yang melibatkan finalis dari ARTHOR81,
-                            ekstrakurikuler seni smansa dan mengundang artis dari luar.</p>
-                        <p>Untuk tahun ini nama daripada Sketsa 81 adalah Magnolias</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Our Events, ada apa aja sih di Sketsa 81? -->
-        <div class="aboutUs_section--wrapper">
-            <section class="aboutUs_section container" id="aboutUs">
-
-                <!-- Kelompok besar -->
-                <div class="aboutUs_content">
-
-                    <!-- kelompok kecil atas -->
-                    <div class="aboutUs_top">
-                        <div class="aboutUs_left">
-                            <h2>TENTANG SKETSA 81</h2>
-                            <p>TEMA nya apa?</p>
-                        </div>
-                        <div class="aboutUs_right">
-                            <div class="image-slider">
-                                <img src="assets/img/magnoRound_rmv_bg.png" alt="Sketsa 81" class="slider-image">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kelompok Kecil Bawah -->
-                    <div class="aboutUs_bottom">
-                        <p>Sketsa 81 adalah event tahunan SMA Negeri 1 Cirebon. Acara ini terdiri dari pertandingan
-                            olahraga antar sekolah (MARKUM CUP), audisi band dan dance antar komunitas (ARTHOR81) dan
-                            pada hari puncaknya akan mengadakan pentas seni yang melibatkan finalis dari ARTHOR81,
-                            ekstrakurikuler seni smansa dan mengundang artis dari luar.</p>
-                        <p>Untuk tahun ini nama daripada Sketsa 81 adalah Magnolias</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- Contact Person -->
-        <div class="aboutUs_section--wrapper">
-            <section class="aboutUs_section container" id="aboutUs">
-
-                <!-- Kelompok besar -->
-                <div class="aboutUs_content">
-
-                    <!-- kelompok kecil atas -->
-                    <div class="aboutUs_top">
-                        <div class="aboutUs_left">
-                            <h2>TENTANG SKETSA 81</h2>
-                            <p>TEMA nya apa?</p>
-                        </div>
-                        <div class="aboutUs_right">
-                            <div class="image-slider">
-                                <img src="assets/img/magnoRound_rmv_bg.png" alt="Sketsa 81" class="slider-image">
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Kelompok Kecil Bawah -->
-                    <div class="aboutUs_bottom">
-                        <p>Sketsa 81 adalah event tahunan SMA Negeri 1 Cirebon. Acara ini terdiri dari pertandingan
-                            olahraga antar sekolah (MARKUM CUP), audisi band dan dance antar komunitas (ARTHOR81) dan
-                            pada hari puncaknya akan mengadakan pentas seni yang melibatkan finalis dari ARTHOR81,
-                            ekstrakurikuler seni smansa dan mengundang artis dari luar.</p>
-                        <p>Untuk tahun ini nama daripada Sketsa 81 adalah Magnolias</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-sm-12">
-                        <strong>Copyright &copy;
-                            <?php echo date('Y'); ?> <a class="red" href="http://instagram.com/smansa_crb"
-                                target="_blank">MPK/OSIS SMANSA CIREBON</a>.
-                        </strong>
-                    </div>
-                    <div class="col-md-6 col-sm-12 footer_sosmed">
-                        <strong>
-                            All rights reserved. Powered by : <a class="red" href="https://instagram.com/iclub.81"
-                                target="_blank">Informatics Club
-                                81</a>
-                        </strong>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <main id="aboutUs">
 
     </main>
     <script src="script.js"></script>
