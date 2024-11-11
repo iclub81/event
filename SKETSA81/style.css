@@ -3,6 +3,10 @@
     src: url(assets/font/dracolas/Dracolas.ttf);
 }
 
+body {
+    background: linear-gradient(to top, #f6c2e6 30%, #461065);
+}
+
 /* Global Styles */
 .no-scroll {
     overflow: hidden;
@@ -120,10 +124,10 @@ header nav a:hover {
 .home {
     display: flex;
     min-height: 100vh;
-    background: linear-gradient(to top, #f6c2e6 30%, #461065);
+    /* background: linear-gradient(to top, #f6c2e6 30%, #461065); */
     position: relative;
     overflow: hidden;
-    margin-bottom: 1200px;
+    /* margin-bottom: 60px; */
 }
 
 .home .title {
@@ -255,7 +259,8 @@ header nav a:hover {
     color: #A852E5;
 }
 
-/* alert */.alert {
+/* alert */
+.alert {
     background: radial-gradient(circle, #AB58E6, #8e04e3);
     /* Gradasi radial dari tengah */
     padding: 20px 40px;
@@ -354,4 +359,131 @@ header nav a:hover {
     /* Gelap */
     font-size: 22px;
     line-height: 40px;
+}
+
+
+
+/* about-section branch */
+
+
+/* About Us Wrapper */
+.aboutUs--wrapper {
+    margin: 60px 0;
+    padding: 30px;
+}
+
+/* About Us Content */
+.aboutUs_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Section Header */
+.aboutUsChild h2 {
+    font-family: 'Dracolas', sans-serif;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+/* Section Header */
+.aboutUsChild p {
+    text-align: justify;
+    padding-bottom: 15px;
+}
+
+/* Cards Container */
+.parrentAboutUs_center {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card Styling */
+.childAboutUs_left,
+.childAboutUs_center,
+.childAboutUs_right {
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling untuk Card Deskripsi */
+.childAboutUs_center {
+    max-width: 800px;
+    /* Lebar maksimal untuk deskripsi */
+    margin-bottom: 20px;
+}
+
+.childAboutUs_left,
+.childAboutUs_right {
+    max-width: 400px;
+    /* Maksimal lebar card */
+}
+
+/* Heading */
+.childAboutUs_left h2,
+.childAboutUs_center h2,
+.childAboutUs_right h2 {
+    font-size: 20px;
+    color: #893BBE;
+}
+
+.video,
+.coming_soon {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.coming_soon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #893BBE;
+    color: #ffffff;
+    padding: 30px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Link Styling */
+.view_more a {
+    text-align: center;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #893BBE;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.view_more .desktop {
+    display: none;
+}
+
+.view_more .mobile {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 922px) {
+    .parrentAboutUs_center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .view_more .desktop {
+        display: inline;
+    }
+}
+
+@media (max-width: 540px) {
+    .view_more .mobile {
+        display: inline;
+    }
 }

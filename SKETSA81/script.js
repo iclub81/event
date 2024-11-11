@@ -125,3 +125,19 @@ document.addEventListener('scroll', function () {
     // Mengatur kecepatan pergerakan maskot (0.5 adalah faktor kecepatan)
     maskot.style.transform = `translate(-50%, -50%) translateY(${scrollValue * 0.1}px)`;
 });
+
+
+
+
+
+
+
+// about-section branch
+// about-section branch
+document.addEventListener("DOMContentLoaded", function () {
+    const viewMoreButton = document.querySelector('.view_more a');
+    viewMoreButton.addEventListener('click', function (event) {
+        event.preventDefault();
+        alert('View more content coming soon!');
+    });
+});

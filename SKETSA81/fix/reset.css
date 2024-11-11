@@ -29,11 +29,15 @@ a {
     color: #d8d4cf;
 }
 
+/* Container */
 .container {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     margin: auto;
+    padding: 0 60px;
+    max-width: 1200px;
+    /* Perluas lebar container */
 }
 
 .d_flex {
