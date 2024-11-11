@@ -8,6 +8,14 @@
     border-collapse: collapse;
 }
 
+h1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+p, a, span {
+    font-family: "Poppins", sans-serif;
+}
+
 html {
     scroll-behavior: smooth;
 }

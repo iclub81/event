@@ -17,19 +17,65 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="grid.css">
+    <link rel="stylesheet" href="fix/grid.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="fix/reset.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/9a2efe3319.js" crossorigin="anonymous"></script>
 
 </head>
 
-<body class="">
+<body class="no_scroll">
+    <header>
+        <h1>SKETSA 81</h1>
+        <div class="burger_menu">
+            <div class="burger--wrapper">
+                <div class="burger_items"></div>
+                <div class="burger_items"></div>
+                <div class="burger_items"></div>
+            </div>
+        </div>
+        <!-- ini kalau ditambah class nav-links, mobile bener, desktop error -->
+        <nav class="nav-disabled">
+            <a href="#home" class="active">Home</a>
+            <a href="#aboutUs">About</a>
+            <a href="#">Event</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="alert hide">
+            <span class="fas fa-exclamation-circle"></span>
+            <span class="msg">Harap klik ikon gembok di gambar tuan putri</span>
+            <div class="close-btn">
+                <span class="fas fa-times"></span>
+            </div>
+        </div>
 
-    <main>
+    </header>
 
-        <!-- Sponsor Section HTML -->
+    <section class="home">
+        <!-- paling belakang (0) 4624 x 1740 -->
+        <img src="assets/img/parralax/00.png" class="title mount2 maskot">
+        <!-- gunung gede (1) 4624 x 1887 -->
+        <!-- <img src="assets/img/parralax/1.png" class="title mount1"> -->
+        <!-- bush gede (2) 4624 x 1388 asep -->
+        <!-- <img src="assets/img/parralax/bush2.png" class="bush2"> -->
+
+        <!-- <h1 class="title">SKETSA 81</h1> -->
+
+        <!-- paling bawah 4624 x 872 -->
+        <img src="assets/img/parralax/bawah.png" class="bush1">
+        <!-- kanan 4624 x 2600 -->
+        <img src="assets/img/parralax/kanan.png" class="leaf2">
+        <!-- kiri 4624 x 2600 -->
+        <img src="assets/img/parralax/kiri.png" class="leaf1">
+        <!-- rencana gembok disini -->
+        <div id="lock">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <p id="unlock-text">Unleash Your Potential</p>
+    </section>
+
+    <main id="aboutUs">
 
     </main>
     <script src="script.js"></script>

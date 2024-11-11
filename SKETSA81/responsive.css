@@ -1,13 +1,139 @@
-/* Responsive Sponsor Section */
-
 /* Max Tablet */
-@media (max-width:922px) {
-    
+@media (max-width: 922px) {
+    header {
+        padding: 10px 3%;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header nav {
+        gap: 15px;
+    }
+
+    header nav a {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+
+    #lock {
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 22px;
+    }
+
+    #unlock-text {
+        top: 75%;
+        left: 50%;
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Burger Menu */
+    .burger_menu {
+        display: block;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .burger--wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 20px;
+    }
+
+    .burger_items {
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    header nav {
+        display: none; /* Sembunyikan menu biasa pada layar kecil */
+    }
+
+    .nav-links.active {
+        display: block;
+        /* Menampilkan menu saat aktif */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #461065;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1;
+    }
+
+    .nav-links ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    .nav-links ul li {
+        margin: 15px 0;
+    }
+
+    .nav-links ul li a {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+        transition: color 0.3s;
+    }
+
+    .nav-links ul li a:hover {
+        color: #A852E5;
+    }
 }
 
 /* Max S - M - L Mobile */
 @media (max-width: 540px) {
+    header {
+        padding: 10px 5%;
+    }
 
+    header h1 {
+        font-size: 24px;
+    }
 
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
 
+    header nav a {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+
+    #lock {
+        top: 75%;
+        left: 50%;
+        font-size: 20px;
+    }
+
+    #unlock-text {
+        top: 80%;
+        left: 50%;
+        font-size: 10px;
+        padding: 6px 12px;
+    }
+
+    .home {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
