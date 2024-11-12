@@ -4,7 +4,14 @@
 }
 
 body {
-    background: linear-gradient(to top, #f6c2e6 30%, #461065);
+    background: linear-gradient(to top, #ba91e0 30%, #461065);
+}
+
+.sketsa81 {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3);
+    color: white;
+    font-weight: bold;
+    font-family: 'Dracolas', sans-serif;
 }
 
 /* Global Styles */
@@ -58,30 +65,29 @@ header.sticky {
 }
 
 header h1 {
-    font-family: 'Dracolas', sans-serif;
+    /* font-family: 'Dracolas', sans-serif; */
     font-size: 40px;
-    color: white;
-    font-weight: bold;
+    /* color: white; */
+    /* font-weight: bold; */
     position: relative;
-    text-shadow:
+    /* text-shadow:
         0 0 5px rgba(255, 255, 255, 0.7),
-        /* Efek glow halus */
+        
         0 0 10px rgba(255, 255, 255, 0.5),
-        /* Efek glow lebih kuat */
-        0 0 15px rgba(255, 255, 255, 0.3);
-    /* Efek lebih terang */
+        
+        0 0 15px rgba(255, 255, 255, 0.3); */
+
 }
 
 header h1 span {
     display: inline-block;
     position: relative;
-    font-weight: bold;
-    color: #fff;
-    /* Warna teks */
-    text-shadow:
+    /* font-weight: bold;
+    color: #fff; */
+    /* text-shadow:
         0 0 10px rgba(255, 255, 255, 0.8),
         0 0 20px rgba(255, 255, 255, 0.6),
-        0 0 30px rgba(255, 255, 255, 0.4);
+        0 0 30px rgba(255, 255, 255, 0.4); */
 }
 
 @keyframes shiny {
@@ -160,9 +166,12 @@ header nav a:hover {
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(-50%, -45%) scale(1);
     }
+
     50% {
         transform: translate(-50%, -50%) scale(1.1);
     }
@@ -361,129 +370,135 @@ header nav a:hover {
     line-height: 40px;
 }
 
-
-
-/* about-section branch */
-
-
-/* About Us Wrapper */
-.aboutUs--wrapper {
+/* About Us Section */
+.about-us {
     margin: 60px 0;
     padding: 30px;
+    text-align: center;
 }
 
-/* About Us Content */
-.aboutUs_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Section Header */
-.aboutUsChild h2 {
+.about-us-title {
     font-family: 'Dracolas', sans-serif;
-    text-align: center;
-    padding-bottom: 15px;
+    font-size: 28px;
+    margin-bottom: 30px;
 }
 
-/* Section Header */
-.aboutUsChild p {
-    text-align: justify;
-    padding-bottom: 15px;
-}
-
-/* Cards Container */
-.parrentAboutUs_center {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-/* Card Styling */
-.childAboutUs_left,
-.childAboutUs_center,
-.childAboutUs_right {
+/* Background Gradien */
+.about-us-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(255,
+                255,
+                255,
+                0.8));
     border-radius: 10px;
-    background-color: #ffffff;
-    padding: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+    /* Shadow putih untuk glass effect */
     text-align: center;
-    flex-direction: column;
-    align-items: center;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    /* Efek blur latar belakang */
+    color: #333333;
+    /* Warna teks lebih gelap */
 }
 
-/* Styling untuk Card Deskripsi */
-.childAboutUs_center {
-    max-width: 800px;
-    /* Lebar maksimal untuk deskripsi */
-    margin-bottom: 20px;
+/* Teks Judul */
+.about-us-card h2 {
+    color: #5A2A8A;
+    /* Warna ungu gelap untuk judul */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Bayangan untuk meningkatkan keterbacaan */
 }
 
-.childAboutUs_left,
-.childAboutUs_right {
-    max-width: 400px;
-    /* Maksimal lebar card */
+/* Teks Deskripsi */
+.about-us-card p {
+    color: #333333;
+    /* Warna teks lebih gelap untuk kontras */
 }
 
-/* Heading */
-.childAboutUs_left h2,
-.childAboutUs_center h2,
-.childAboutUs_right h2 {
-    font-size: 20px;
+.info_utama {
+    margin-bottom: 30px;
+}
+
+.about-us-card h2 {
+    font-size: 22px;
     color: #893BBE;
+    margin-bottom: 15px;
 }
 
-.video,
-.coming_soon {
+.about-us-card p {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+}
+
+.events {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.event {
+    flex: 1;
+    max-width: 100%;
+}
+
+.event h3 {
+    font-size: 18px;
+    color: #893BBE;
+    margin-bottom: 10px;
+}
+
+.event p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+iframe {
     width: 100%;
-    height: auto;
+    max-width: 560px;
+    height: 315px;
     border-radius: 8px;
 }
 
-.coming_soon {
+/* .coming-soon {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #893BBE;
     color: #ffffff;
-    padding: 30px;
-    font-size: 18px;
     font-family: 'Poppins', sans-serif;
+    padding: 149px 50px;
+    border-radius: 8px;
+    font-size: 18px;
+} */
+
+.coming-soon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 149px 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #893BBE, #A678DF);
+    /* Gradasi ungu */
+    overflow: hidden;
 }
 
-/* Link Styling */
-.view_more a {
-    text-align: center;
-    display: inline-block;
-    padding: 10px 20px;
-    color: #893BBE;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.view_more .desktop {
-    display: none;
-}
-
-.view_more .mobile {
-    display: none;
-}
-
-/* Responsive */
-@media (max-width: 922px) {
-    .parrentAboutUs_center {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .view_more .desktop {
-        display: inline;
-    }
-}
-
-@media (max-width: 540px) {
-    .view_more .mobile {
-        display: inline;
-    }
+.coming-soon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Latar belakang putih transparan */
+    backdrop-filter: blur(10px);
+    /* Blur untuk membuat efek frosted glass */
+    z-index: -1;
+    border-radius: 8px;
 }

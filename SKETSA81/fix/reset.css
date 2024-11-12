@@ -8,7 +8,7 @@
     border-collapse: collapse;
 }
 
-h1 {
+h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -34,9 +34,9 @@ a {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: auto;
+    /* margin: auto; */
     padding: 0 60px;
-    max-width: 1200px;
+    max-width: 1500px;
     /* Perluas lebar container */
 }
 

@@ -13,4 +13,7 @@
 
     
     /* about-section branch */
+    .events {
+            flex-direction: column;
+        }
 }
