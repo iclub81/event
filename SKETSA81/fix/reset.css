@@ -35,6 +35,8 @@ a {
     flex-direction: column;
     overflow: hidden;
     /* margin: auto; */
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 60px;
     max-width: 1500px;
     /* Perluas lebar container */

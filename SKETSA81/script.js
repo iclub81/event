@@ -1,3 +1,8 @@
+// Scroll ke paling atas saat halaman dimuat
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+
 // Main Section
 const title = document.querySelector('.title')
 const leaf1 = document.querySelector('.leaf1')
