@@ -3,6 +3,17 @@
     src: url(assets/font/dracolas/Dracolas.ttf);
 }
 
+body {
+    background: linear-gradient(to top, #ba91e0 30%, #461065);
+}
+
+.sketsa81 {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.3);
+    color: white;
+    font-weight: bold;
+    font-family: 'Dracolas', sans-serif;
+}
+
 /* Global Styles */
 .no-scroll {
     overflow: hidden;
@@ -54,30 +65,29 @@ header.sticky {
 }
 
 header h1 {
-    font-family: 'Dracolas', sans-serif;
+    /* font-family: 'Dracolas', sans-serif; */
     font-size: 40px;
-    color: white;
-    font-weight: bold;
+    /* color: white; */
+    /* font-weight: bold; */
     position: relative;
-    text-shadow:
+    /* text-shadow:
         0 0 5px rgba(255, 255, 255, 0.7),
-        /* Efek glow halus */
+        
         0 0 10px rgba(255, 255, 255, 0.5),
-        /* Efek glow lebih kuat */
-        0 0 15px rgba(255, 255, 255, 0.3);
-    /* Efek lebih terang */
+        
+        0 0 15px rgba(255, 255, 255, 0.3); */
+
 }
 
 header h1 span {
     display: inline-block;
     position: relative;
-    font-weight: bold;
-    color: #fff;
-    /* Warna teks */
-    text-shadow:
+    /* font-weight: bold;
+    color: #fff; */
+    /* text-shadow:
         0 0 10px rgba(255, 255, 255, 0.8),
         0 0 20px rgba(255, 255, 255, 0.6),
-        0 0 30px rgba(255, 255, 255, 0.4);
+        0 0 30px rgba(255, 255, 255, 0.4); */
 }
 
 @keyframes shiny {
@@ -120,10 +130,10 @@ header nav a:hover {
 .home {
     display: flex;
     min-height: 100vh;
-    background: linear-gradient(to top, #f6c2e6 30%, #461065);
+    /* background: linear-gradient(to top, #f6c2e6 30%, #461065); */
     position: relative;
     overflow: hidden;
-    margin-bottom: 1200px;
+    /* margin-bottom: 60px; */
 }
 
 .home .title {
@@ -156,9 +166,12 @@ header nav a:hover {
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(-50%, -45%) scale(1);
     }
+
     50% {
         transform: translate(-50%, -50%) scale(1.1);
     }
@@ -255,7 +268,8 @@ header nav a:hover {
     color: #A852E5;
 }
 
-/* alert */.alert {
+/* alert */
+.alert {
     background: radial-gradient(circle, #AB58E6, #8e04e3);
     /* Gradasi radial dari tengah */
     padding: 20px 40px;
@@ -354,4 +368,137 @@ header nav a:hover {
     /* Gelap */
     font-size: 22px;
     line-height: 40px;
+}
+
+/* About Us Section */
+.about-us {
+    margin: 60px 0;
+    padding: 30px;
+    text-align: center;
+}
+
+.about-us-title {
+    font-family: 'Dracolas', sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+/* Background Gradien */
+.about-us-card {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.8), rgba(255,
+                255,
+                255,
+                0.8));
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
+    /* Shadow putih untuk glass effect */
+    text-align: center;
+    margin: auto;
+    backdrop-filter: blur(10px);
+    /* Efek blur latar belakang */
+    color: #333333;
+    /* Warna teks lebih gelap */
+}
+
+/* Teks Judul */
+.about-us-card h2 {
+    color: #5A2A8A;
+    /* Warna ungu gelap untuk judul */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Bayangan untuk meningkatkan keterbacaan */
+}
+
+/* Teks Deskripsi */
+.about-us-card p {
+    color: #333333;
+    /* Warna teks lebih gelap untuk kontras */
+}
+
+.info_utama {
+    margin-bottom: 30px;
+}
+
+.about-us-card h2 {
+    font-size: 22px;
+    color: #893BBE;
+    margin-bottom: 15px;
+}
+
+.about-us-card p {
+    text-align: justify;
+    font-size: 16px;
+    color: #333;
+}
+
+.events {
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.event {
+    flex: 1;
+    max-width: 100%;
+}
+
+.event h3 {
+    font-size: 18px;
+    color: #893BBE;
+    margin-bottom: 10px;
+}
+
+.event p {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 8px;
+}
+
+/* .coming-soon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #893BBE;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 149px 50px;
+    border-radius: 8px;
+    font-size: 18px;
+} */
+
+.coming-soon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    padding: 149px 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #893BBE, #A678DF);
+    /* Gradasi ungu */
+    overflow: hidden;
+}
+
+.coming-soon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Latar belakang putih transparan */
+    backdrop-filter: blur(10px);
+    /* Blur untuk membuat efek frosted glass */
+    z-index: -1;
+    border-radius: 8px;
 }

@@ -20,8 +20,17 @@ document.addEventListener('scroll', function () {
     mount2.style.marginBottom = -value * 1.2 + 'px'
 })
 
+// maskot main-section
+const maskot = document.querySelector('.maskot');
 
-// Header
+document.addEventListener('scroll', function () {
+    let scrollValue = window.scrollY;
+    // Mengatur kecepatan pergerakan maskot (0.5 adalah faktor kecepatan)
+    maskot.style.transform = `translate(-50%, -50%) translateY(${scrollValue * 0.1}px)`;
+});
+
+
+// Header Sticky
 window.addEventListener('scroll', function () {
     const header = document.querySelector('header');
     if (window.scrollY > 0) {
@@ -82,8 +91,8 @@ document.addEventListener("DOMContentLoaded", function () {
         document.body.classList.remove("no-scroll");
         headerNav.classList.remove("nav-disabled");
 
-        // Auto scroll ke elemen dengan ID 'aboutUs'
-        document.getElementById("aboutUs").scrollIntoView({
+        // Auto scroll ke elemen dengan ID 'content'
+        document.getElementById("content").scrollIntoView({
             behavior: 'smooth'
         });
 
@@ -103,10 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
-
-// burger
+// burger masih error
 // Ambil elemen burger dan menu nav
 const burgerMenu = document.querySelector('.burger_menu');
 const navLinks = document.querySelector('.nav-links');
@@ -117,11 +123,10 @@ burgerMenu.addEventListener('click', () => {
 });
 
 
-// maskot
-const maskot = document.querySelector('.maskot');
 
-document.addEventListener('scroll', function () {
-    let scrollValue = window.scrollY;
-    // Mengatur kecepatan pergerakan maskot (0.5 adalah faktor kecepatan)
-    maskot.style.transform = `translate(-50%, -50%) translateY(${scrollValue * 0.1}px)`;
-});
+
+
+
+
+
+

@@ -1,3 +1,4 @@
+<!-- buat agar kalau di refresh auto ke paling atas -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,8 +27,9 @@
 </head>
 
 <body class="no_scroll">
+    <!-- header -->
     <header>
-        <h1>SKETSA <span>81</span></h1>
+        <h1 class="sketsa81">SKETSA <span>81</span></h1>
         <div class="burger_menu">
             <div class="burger--wrapper">
                 <div class="burger_items"></div>
@@ -38,7 +40,7 @@
         <!-- ini kalau ditambah class nav-links, mobile bener, desktop error -->
         <nav class="nav-disabled">
             <a href="#home" class="active">Home</a>
-            <a href="#aboutUs">About</a>
+            <a href="#content">About</a>
             <a href="#">Event</a>
             <a href="#">Contact</a>
         </nav>
@@ -52,11 +54,14 @@
 
     </header>
 
-    <section class="home">
+    <!-- main section -->
+    <section class="home" id="home">
         <!-- paling belakang (0) 4624 x 1740 -->
         <img src="assets/img/parralax/00.png" class="title mount2 maskot">
+
         <!-- gunung gede (1) 4624 x 1887 -->
         <!-- <img src="assets/img/parralax/1.png" class="title mount1"> -->
+
         <!-- bush gede (2) 4624 x 1388 asep -->
         <!-- <img src="assets/img/parralax/bush2.png" class="bush2"> -->
 
@@ -68,6 +73,7 @@
         <img src="assets/img/parralax/kanan.png" class="leaf2">
         <!-- kiri 4624 x 2600 -->
         <img src="assets/img/parralax/kiri.png" class="leaf1">
+
         <!-- rencana gembok disini -->
         <div id="lock">
             <i class="fa-solid fa-lock"></i>
@@ -75,9 +81,60 @@
         <p id="unlock-text">Unleash Your Potential</p>
     </section>
 
-    <main id="aboutUs">
+    <main id="content">
+
+        <!-- Section About Us -->
+        <section class="about-us container">
+            <!-- Judul Utama -->
+            <h2 class="about-us-title sketsa81">WHAT IS SKETSA <span>81</span> ?</h2>
+        
+            <!-- Card Wrapper -->
+            <div class="about-us-card">
+                <!-- Info Utama -->
+                <div class="info_utama">
+                    <h2>SKETSA 81</h2>
+                    <p>
+                        Sketsa 81 adalah event tahunan SMA Negeri 1 Cirebon. Acara ini terdiri dari pertandingan
+                        olahraga antar sekolah (MARKUM CUP), audisi band dan dance antar komunitas (ARTHOR81) dan
+                        pada hari puncaknya akan mengadakan pentas seni yang melibatkan finalis dari ARTHOR81,
+                        ekstrakurikuler seni smansa dan mengundang artis dari luar.</p>
+                    <p>Untuk tahun ini nama daripada Sketsa 81 adalah Magnolias.</p>
+                    </p>
+                </div>
+        
+                <!-- Event Row -->
+                <div class="events row">
+                    <!-- Past Event Column -->
+                    <div class="col-md-5 event past-event">
+                        <h3>Past Events</h3>
+                        <p>After Movie SKETSA81: RETRICS 2019</p>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yVKvV4Gtrjc?si=1pVoB36gQ-akNKr5"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+        
+                    <!-- Current Event Column -->
+                    <div class="col-md-5 event current-event">
+                        <h3>Current Events</h3>
+                        <p>After Movie SKETSA81: Magnolias 2024</p>
+                        <div class="coming-soon">Coming Soon</div>
+                        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/yVKvV4Gtrjc?si=1pVoB36gQ-akNKr5"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+
+    <!-- footer-section -->
+    <!-- <footer>
+
+    </footer> -->
+
     <script src="script.js"></script>
 </body>
 
